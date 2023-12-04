@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
+
+        <title>Simple Camera Map</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="nav">
+                <a href="https://google.com" target="_blank"><img id="logo" src="locam.png"></a>
+
+                <div class="search"> 
+                    <input id="formsearch" type="text" placeholder="Search any Camera here: by first letter, name, number..."> 
+                    <button id="action1" type="button" aria-label="Search">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="sign_up"> <button><a href="#">Sign in</a> <br><br> <a href="https://google.com" target="_blank">Login</a></button></div>
+            </div>
+
+            <h1>Simple Camera Map</h1>
+            <p>Click <a href="https://www.google.com/" target="_blank"> here </a>to see all the Cameras map</p>
+            <p>Lets check it out!</p>
+            <div id="map"></div>
+            <div class="bottom">
+                <p>Camera locations across Germany Click<a href="#"> here</a> to learn more.</p>
+            </div>
+            <script type="module" src="/src/main.ts"></script>
+        </div>
+    </body>
+</html>
